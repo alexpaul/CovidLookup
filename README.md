@@ -13,6 +13,8 @@
 1. Convert JSON property names to Swifty names using `CodingKeys` as needed.
 1. Populate a Table View with the `countries` array from the JSON data. 
 
+![covid lookup](https://user-images.githubusercontent.com/1819208/101109279-85c32700-35a4-11eb-9f58-864bbc5fdf5a.png)
+
 Bonus: 
 1. Add a search bar to the view controller. 
 2. The user should be able to search by country name e.g `Saint Lucia`
