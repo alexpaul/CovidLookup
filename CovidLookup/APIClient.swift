@@ -38,6 +38,8 @@ struct APIClient {
         return completion(.failure(error))
       }
       
+      // first we have to type cast URLResponse to HTTPURLRepsonse to get access to the status code
+      // we verify the that status code is in the 200 range which signals all went well with the GET request
       guard let httpResponse = response as? HTTPURLResponse,
             (200...299).contains(httpResponse.statusCode) else {
         print("bad status code")
