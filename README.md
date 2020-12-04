@@ -1,1 +1,18 @@
 # CovidLookup
+
+## Objective
+
+* Creating a Swift model(s) from Web API JSON data.
+* Using `URLSession` natively. 
+* Populating a Table View with parsed JSON data. 
+
+## COVID API
+
+1. Given the following endpoint: `https://api.covid19api.com/summary` verify the JSON payload via Postman or other. 
+1. Create a model(s) and an API client using the endpoint above. 
+1. Convert JSON property names to Swifty names using `CodingKeys` as needed.
+1. Populate a Table View with the `countries` array from the JSON data. 
+
+Bonus: 
+1. Add a search bar to the view controller. 
+2. The user should be able to search by country name e.g `Saint Lucia`
