@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		57CB1EA6257976F30099B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EA5257976F30099B302 /* AppDelegate.swift */; };
 		57CB1EA8257976F30099B302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EA7257976F30099B302 /* SceneDelegate.swift */; };
-		57CB1EAA257976F30099B302 /* CovidCountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EA9257976F30099B302 /* CovidCountriesController.swift */; };
+		57CB1EAA257976F30099B302 /* CovidCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EA9257976F30099B302 /* CovidCountriesViewController.swift */; };
 		57CB1EAD257976F30099B302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CB1EAB257976F30099B302 /* Main.storyboard */; };
 		57CB1EAF257976F50099B302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CB1EAE257976F50099B302 /* Assets.xcassets */; };
 		57CB1EB2257976F50099B302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CB1EB0257976F50099B302 /* LaunchScreen.storyboard */; };
-		57CB1EBB2579776E0099B302 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EBA2579776E0099B302 /* Summary.swift */; };
+		57CB1EBB2579776E0099B302 /* CountrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EBA2579776E0099B302 /* CountrySummary.swift */; };
 		57CB1EBE25797B5E0099B302 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB1EBD25797B5E0099B302 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +21,12 @@
 		57CB1EA2257976F30099B302 /* CovidLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CB1EA5257976F30099B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57CB1EA7257976F30099B302 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57CB1EA9257976F30099B302 /* CovidCountriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCountriesController.swift; sourceTree = "<group>"; };
+		57CB1EA9257976F30099B302 /* CovidCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCountriesViewController.swift; sourceTree = "<group>"; };
 		57CB1EAC257976F30099B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57CB1EAE257976F50099B302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57CB1EB1257976F50099B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57CB1EB3257976F50099B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57CB1EBA2579776E0099B302 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		57CB1EBA2579776E0099B302 /* CountrySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummary.swift; sourceTree = "<group>"; };
 		57CB1EBD25797B5E0099B302 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,10 +62,10 @@
 			children = (
 				57CB1EA5257976F30099B302 /* AppDelegate.swift */,
 				57CB1EA7257976F30099B302 /* SceneDelegate.swift */,
-				57CB1EA9257976F30099B302 /* CovidCountriesController.swift */,
+				57CB1EA9257976F30099B302 /* CovidCountriesViewController.swift */,
 				57CB1EBD25797B5E0099B302 /* APIClient.swift */,
 				57CB1EAB257976F30099B302 /* Main.storyboard */,
-				57CB1EBA2579776E0099B302 /* Summary.swift */,
+				57CB1EBA2579776E0099B302 /* CountrySummary.swift */,
 				57CB1EAE257976F50099B302 /* Assets.xcassets */,
 				57CB1EB0257976F50099B302 /* LaunchScreen.storyboard */,
 				57CB1EB3257976F50099B302 /* Info.plist */,
@@ -143,9 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57CB1EAA257976F30099B302 /* CovidCountriesController.swift in Sources */,
+				57CB1EAA257976F30099B302 /* CovidCountriesViewController.swift in Sources */,
 				57CB1EA6257976F30099B302 /* AppDelegate.swift in Sources */,
-				57CB1EBB2579776E0099B302 /* Summary.swift in Sources */,
+				57CB1EBB2579776E0099B302 /* CountrySummary.swift in Sources */,
 				57CB1EBE25797B5E0099B302 /* APIClient.swift in Sources */,
 				57CB1EA8257976F30099B302 /* SceneDelegate.swift in Sources */,
 			);

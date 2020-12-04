@@ -19,7 +19,7 @@ struct APIClient {
   // URLSession is an asychronous API
   // synchronous code blocks UI
   // asynchrouus does not block the main thread, performs request on a background thread
-  func fetchCovidData(completion: @escaping (Result<[Summary], Error>) -> ()) {
+  func fetchCovidData(completion: @escaping (Result<[CountrySummary], Error>) -> ()) {
     // 1. - endpoint URL string
     let endpointURLString = "https://api.covid19api.com/summary"
     
@@ -49,7 +49,7 @@ struct APIClient {
       if let jsonData = data {
         // convert data to our swift model
         do {
-          let countries = try JSONDecoder().decode(SummaryWrapper.self, from: jsonData).countries
+          let countries = try JSONDecoder().decode(CovidCountriesWrapper.self, from: jsonData).countries
           completion(.success(countries))
         } catch {
           // decoding error

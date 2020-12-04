@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CovidCountriesController: UIViewController {
+class CovidCountriesViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
@@ -15,7 +15,7 @@ class CovidCountriesController: UIViewController {
   
   private let apiClient = APIClient()
   
-  private var countriesSummary = [Summary]() {
+  private var countriesSummary = [CountrySummary]() {
     didSet { // property observer listens for changes on this property
       DispatchQueue.main.async { // we have to update UI on the main thread
         self.tableView.reloadData()
@@ -41,7 +41,7 @@ class CovidCountriesController: UIViewController {
   }
 }
 
-extension CovidCountriesController: UITableViewDataSource {
+extension CovidCountriesViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return countriesSummary.count
   }

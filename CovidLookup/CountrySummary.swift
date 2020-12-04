@@ -7,13 +7,11 @@
 
 import Foundation
 
-// create a SummaryWrapper and Country  model
-
 // coverting JSON to Swift objects
 // Decodable is part the Codable protocol alias
 // typealias  Codable = Encodable & Decodable
-struct SummaryWrapper: Codable {
-  let countries: [Summary]
+struct CovidCountriesWrapper: Codable {
+  let countries: [CountrySummary]
   
   // CodingKeys allows us to rename properties
   enum CodingKeys: String, CodingKey {
@@ -21,7 +19,7 @@ struct SummaryWrapper: Codable {
   }
 }
 
-struct Summary: Codable {
+struct CountrySummary: Codable {
   let country: String
   let totalConfirmed: Int
   let totalRecovered: Int
