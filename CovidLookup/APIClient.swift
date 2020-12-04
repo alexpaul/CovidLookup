@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct APIClient { // APIClient.fetch
-  
+struct APIClient {
   // communicate retrieved data back to
   // the view controller that made the call
   // ways in which we can communicate:
@@ -38,7 +37,13 @@ struct APIClient { // APIClient.fetch
       if let error = error {
         return completion(.failure(error))
       }
-      // TODO: status code via response
+      
+      guard let httpResponse = response as? HTTPURLResponse,
+            (200...299).contains(httpResponse.statusCode) else {
+        print("bad status code")
+        return
+      }
+      
       if let jsonData = data {
         // convert data to our swift model
         do {
@@ -52,6 +57,5 @@ struct APIClient { // APIClient.fetch
     }
     dataTask.resume()
   }
-  
 }
 

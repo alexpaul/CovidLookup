@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CovidSummaryController: UIViewController {
+class CovidCountriesController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
@@ -41,7 +41,7 @@ class CovidSummaryController: UIViewController {
   }
 }
 
-extension CovidSummaryController: UITableViewDataSource {
+extension CovidCountriesController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return countriesSummary.count
   }
